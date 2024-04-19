@@ -33,7 +33,7 @@
 					<header id="header">
 						<a href="index.html" class="logo">Massively</a>
 					</header>
-
+					
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
@@ -51,7 +51,13 @@
 
 				<!-- Main -->
 					<div id="main">
-
+						<button class="btn btn-primary" onclick="cambiarFuente();">
+							cambiar fuente
+						</button>
+						<button class="btn btn-primary" onclick="cambiarColor();">
+							cambiar color
+						</button>
+						<h1 id="juanito">PEPITO JUANITO DIEGITO</h1>
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
@@ -67,7 +73,7 @@
 									<li><a href="#" class="button large">Full Story</a></li>
 								</ul>
 							</article>
-
+							
 						<!-- Posts -->
 							<section class="posts">
 								<article>
@@ -257,5 +263,15 @@
 			<script src="assets/js/main.js"></script>
 			<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 			<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+			<script>
+				function cambiarFuente(){
+					var testo=document.getElementById("juanito");
+					testo.style.fontFamily='Times New Roman';
+				}
+				function cambiarColor(){
+					var testo=document.getElementById("juanito");
+					testo.style.color="Green";
+				}
+			</script>
 		</body>
 </html>
